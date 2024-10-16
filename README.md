@@ -21,7 +21,7 @@ FaceMatch is a Flask web application that verifies a person's identity by compar
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/FaceMatch.git
+   git clone https://github.com/Mk-1000/FaceMatch.git
    cd FaceMatch
    ```
 
@@ -48,6 +48,7 @@ FaceMatch is a Flask web application that verifies a person's identity by compar
 4. Install the required packages:
 
    ```bash
+   pip install --upgrade setuptools
    pip install Flask
    pip install face_recognition
    pip install git+https://github.com/ageitgey/face_recognition_models

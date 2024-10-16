@@ -1,3 +1,33 @@
+# Python cache files
+__pycache__/
+*.py[cod]
 
-/__pycache__
-/venv
+# Virtual environment
+venv/
+env/
+
+# Flask instance folder
+instance/
+
+# Compiled Python files
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+
+# IDE specific files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Uploads and static files
+static/*
