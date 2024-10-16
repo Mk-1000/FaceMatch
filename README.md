@@ -91,4 +91,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 - [face_recognition](https://github.com/ageitgey/face_recognition) - For the facial recognition capabilities.
 - [Flask](https://flask.palletsprojects.com/) - For the web framework.
-```
