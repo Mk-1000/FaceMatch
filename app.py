@@ -43,15 +43,19 @@ def upload_files():
     document_file.save(document_path)
     selfie_file.save(selfie_path)
 
+    # Generate a unique image_id for the current request
+    image_id = str(uuid.uuid4())  # or any other unique identifier you want to use
+
     # Perform face verification
     try:
-        is_match = compare_faces(document_path, selfie_path)
+        is_match = compare_faces(document_path, selfie_path, image_id)  # Pass the image_id
         if is_match:
             return jsonify({"message": "Face verified successfully!"})
         else:
             return jsonify({"message": "Faces do not match."}), 400
     except Exception as e:
         return jsonify({"error": str(e)}), 400
+
 
 if __name__ == '__main__':
     app.run(debug=True)
